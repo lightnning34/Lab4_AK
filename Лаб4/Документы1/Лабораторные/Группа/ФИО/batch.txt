@@ -1,0 +1,7 @@
+@echo off
+mkdir "Invisible folder"
+attrib +h "Invisible folder"
+mkdir "Visible folder"
+xcopy /? > "Visible Folder\copyhelp.txt"
+echo Каталоги успешно созданы.
+pause
