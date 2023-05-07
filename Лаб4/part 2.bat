@@ -9,7 +9,7 @@ IF "%1"=="" (
 ) ELSE (
 set "source=%~1"
 set "destination=%~2"
-
+set "file_name=%~3"
 
 attrib "%file_name%" | find "H" >nul
 if %errorlevel% equ 0 (
